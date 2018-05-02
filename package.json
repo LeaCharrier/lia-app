@@ -1,0 +1,37 @@
+{
+  "name": "gulp-evolve",
+  "version": "1.0.0",
+  "description": "gulp-evolve",
+  "main": "main.js",
+  "author": "leaCharrier",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^15.2.0",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
