@@ -11,7 +11,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: $lato;
+  font-family: $apoka;
  }
 
 /* HTML5 display-role reset for older browsers */
@@ -47,26 +47,8 @@ strong {
   font-weight: 700;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-  cursor: url(../images/hover.png) 20 20, pointer;
-}
-body{
-  overflow-x: hidden;
+html, body {
+  max-width: 960px;
+  height: 550px;
 }
 
-.hideTablet {
-   @include maxWidth($breakPointTablet) {
-      display: none !important;
-    }
-}
-
-
-.hideme {
-  opacity: 0;
-}
-
-body {
-  cursor: url(../images/cursor.png) 20 20, auto;
-}
