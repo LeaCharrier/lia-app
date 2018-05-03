@@ -1,0 +1,71 @@
+.button {
+  $box-shadow: 0 2px 4px 0 rgba(103,103,103,0.08);
+  font-family: $font-normal;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 15px 30px;
+  &__classic {
+    font-weight: 700;
+    font-size: 16px;
+    &--active {
+
+    }
+    &--inactive {
+
+    }
+  }
+  &__choise {
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: $box-shadow;
+    & > span:first-of-type {
+      font-weight: 700;
+      padding-right: 40px;
+      font-size: 12px;
+    }
+    & > span:last-of-type {
+      font-weight: 500;
+      position: relative;
+      font-size: 16px;
+      padding-left: 8px;
+      &:before {
+        content: '';
+        width: 11px;
+        height: 11px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 100%;
+        border: 1px solid grey;
+        position: absolute;
+        left: -15px;
+        border-radius: 100%;
+      }
+      &:after {
+        content: '';
+        opacity: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        position: absolute;
+        left: -12px;
+        background-color: grey;
+        transition: 0.2s;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &--selected {
+      border: 1px solid grey;
+      box-shadow: none;
+      & > span:last-of-type {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,27 +1,59 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/icon"> 
-  <link rel="icon" href="images/favicon.ico" />
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/icon">
+    <link rel="icon" href="images/favicon.ico"/>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 </head>
 
 <body>
-  <header>
-  </header>
-  
-  <main>
-    <p>ready</p>
-  </main>
+<header>
+</header>
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+<main>
+    <ul>
+        <li>
+            <button class="button button__choise button__choise--selected">
+                <span>1</span>
+                <span>Vert</span>
+            </button>
+        </li>
+        <li>
+            <button class="button button__choise">
+                <span>1</span>
+                <span>Vert</span>
+            </button>
+        </li>
+        <li></li>
+    </ul>
+
+    <button class="button button__classic button__classic--inactive" disabled>
+        <p>Continuer</p>
+    </button>
+    <button class="button button__classic button__classic--active">
+        <p>Continuer</p>
+    </button>
+
+    <p>ready</p>
+    <div class="stepper">
+        <div class="stepper__container">
+            <div>
+                <span>1</span>
+                /
+                <span>5</span>
+            </div>
+            </p>
+        </div>
+</main>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
