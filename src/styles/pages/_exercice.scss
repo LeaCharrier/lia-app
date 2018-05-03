@@ -17,6 +17,12 @@
       bottom: 126px;
     }
 
+    &-end {
+      &:after {
+        bottom: 226px;
+      }
+    }
+
     .title {
       font-size: 12px;
       font-weight: 800;
@@ -35,6 +41,12 @@
       position: absolute;
       bottom: 0;
     }  
+
+    .arbreEntier{
+      position: absolute;
+      bottom: 50px;
+      left: 57px;
+    }
   }
 
   .containExercice {
