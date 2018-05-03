@@ -1,0 +1,29 @@
+.groupe {
+  padding: 0 70px;
+
+  .title {
+    font-size: 21px;
+    margin-left: 22px;
+    margin-bottom: 45px;
+  }
+
+  .containCards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      margin: 0 22px 50px;
+      border: 1px solid $bg;
+      border-radius: 20px;
+      height: 160px;
+      box-shadow: 0 2px 4px 0 rgba(103, 103, 103, 0.08);
+      text-align: center;
+
+      p {
+        font-size: 18px;
+        margin: 10px auto 10px;
+        max-width: 114px;
+      }
+    }
+  }
+}

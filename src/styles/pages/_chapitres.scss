@@ -1,0 +1,15 @@
+.chapitres {
+  padding: 0 33px;
+
+  .title {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 20px 0 50px;
+    text-align: center;
+  }
+
+  .containCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
