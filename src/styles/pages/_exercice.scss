@@ -59,6 +59,16 @@
     .contentExercice {
       max-width: 280px;
       margin: 56px auto 0;
+
+      &__list {
+        margin-top: 30px;
+        .button__choise {
+          width: 100%;
+        }
+        li {
+          margin-bottom: 18px;
+        }
+      }
       
       .consigne {
         font-size: 18px;
@@ -71,6 +81,11 @@
         margin: 24px auto 31px;
       }
     }
+  }
+  .contentReponse {
+    display: flex;
+    justify-content: flex-end;
+    margin: 60px 45px 0 0;
   }
 
 }
