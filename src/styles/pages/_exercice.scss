@@ -1,0 +1,64 @@
+.exercice {
+  display: flex;
+  background: $bg;
+  height: 100%;
+
+  .chapitre {
+    width: 50%;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/path-bg.png');
+      width: 90px;
+      height: 72px;
+      right: -20px;
+      bottom: 126px;
+    }
+
+    .title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-top: 42px;
+      margin-left: 42px;
+    }
+
+    .subtitle {
+      font-size: 21px;
+      font-weight: 300;
+      margin-left: 42px;
+    }
+
+    .arbre {
+      position: absolute;
+      bottom: 0;
+    }  
+  }
+
+  .containExercice {
+    width: 50%;
+    position: relative;
+    background-color: $white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    .contentExercice {
+      max-width: 280px;
+      margin: 56px auto 0;
+      
+      .consigne {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .color {
+        display: block;
+        margin: 24px auto 31px;
+      }
+    }
+  }
+
+}
