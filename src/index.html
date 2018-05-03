@@ -17,64 +17,85 @@
 </header>
 
 <main>
-    <div class="exercice">
-        <div class="chapitre">
-            <h2 class="title">Chapitre 1</h2>
-            <p class="subtitle">Les couleurs</p>
-            <img src="images/arbre.png" class="arbre">
+    <div class="page activePage">
+        <div class="listCours activePage">
+            <ul class="listCours__links">
+                <li>
+                    <a href="">exercice one</a>
+                </li>
+            </ul>
         </div>
-        <div class="containExercice">
-            <div class="button button__sound">
-                <div>
-                    <img src="images/sound.svg" alt="">
-                </div>
+    </div>
+    <div class="page">
+        <div class="exercice">
+            <div class="chapitre">
+                <h2 class="title">Chapitre 1</h2>
+                <p class="subtitle">Les couleurs</p>
+                <img src="images/Baobas.svg" class="arbre">
             </div>
-            <div class="contentExercice">
-                <h2 class="consigne">Choisis la bonne orthographe pour cette couleur :</h2>
-                <img src="images/exo-color.png" class="color">
-                <ul class="contentExercice__list">
-                    <li>
-                        <button class="button button__choise">
-                            <span>1</span>
-                            <span>Vert</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button button__choise">
-                            <span>2</span>
-                            <span>Verre</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button button__choise">
-                            <span>3</span>
-                            <span>Vers</span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="contentReponse">
-                <div class="answerReponse">
+            <div class="containExercice">
+                <div class="button button__sound">
                     <div>
-
+                        <img src="images/sound.svg" alt="">
                     </div>
                 </div>
-                <p>
-                    C'est un bonne réponse
-                </p>
-                <button class="button button__classic button__classic--active">
-                    <p>Continuer</p>
-                </button>
-            </div>
-        </div>
-        <div class="stepper">
-            <div class="stepper__container">
-                <div>
-                    <span>1</span>
-                    /
-                    <span>5</span>
+                <div class="contentExercice">
+                    <h2 class="consigne">Choisis la bonne orthographe pour cette couleur :</h2>
+                    <img src="images/exo-color.png" class="color">
+                    <ul class="contentExercice__list">
+                        <li>
+                            <button class="button button__choise">
+                                <span>1</span>
+                                <span data-attr="true">Vert</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button button__choise">
+                                <span>2</span>
+                                <span>Verre</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button button__choise">
+                                <span>3</span>
+                                <span>Vers</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contentReponse">
+                    <div class="answerReponse">
+                        <div class="answerReponse__validate">
+                            <img src="images/validate.svg" alt="">
+                        </div>
+                        <div class="answerReponse__cross">
+                            <img src="images/cross.svg" alt="">
+                        </div>
+                    </div>
+                    <article>
+                        <p class="answerReponse__good">
+                            <span>C'est un bonne réponse !</span>
+                        </p>
+                        <p class="answerReponse__wrong">
+                            <span>La bonne réponse :</span>
+                            <span class="answerReponse__element"></span>
+                        </p>
+                    </article>
+                    <button id="next-step" class="button button__classic" disabled>
+                        <p>Continuer</p>
+                    </button>
                 </div>
             </div>
+            <div class="stepper">
+                <div class="stepper__container">
+                    <div>
+                        <span>1</span>
+                        /
+                        <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 

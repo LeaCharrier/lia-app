@@ -3,6 +3,17 @@
   background: $bg;
   height: 100%;
 
+  @keyframes apparitionY {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .chapitre {
     width: 50%;
     position: relative;
@@ -24,25 +35,40 @@
     }
 
     .title {
+      opacity: 0;
       font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
       margin-top: 42px;
       margin-left: 42px;
+      animation: apparition 1.2s forwards;
     }
 
     .subtitle {
+      opacity: 0;
       font-size: 21px;
       font-weight: 300;
       margin-left: 42px;
+      animation: apparition 1.2s forwards 0.2s;
+    }
+
+    @keyframes apparition {
+      0% {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     .arbre {
       position: absolute;
       bottom: 0;
-    }  
+    }
 
-    .arbreEntier{
+    .arbreEntier {
       position: absolute;
       bottom: 50px;
       left: 57px;
@@ -65,17 +91,27 @@
         .button__choise {
           width: 100%;
         }
+        @for $j from 1 through 3 {
+          li:nth-child(#{$j}) {
+            animation-delay: $j * 500ms + 1000ms
+          }
+        }
         li {
+          opacity: 0;
           margin-bottom: 18px;
+          animation-name: apparitionY;
+          animation-fill-mode: forwards;
+          animation-duration: 1s;
         }
       }
-      
+
       .consigne {
         font-size: 18px;
         font-weight: 700;
         text-align: center;
+        opacity: 0;
+        animation: 1s apparitionY forwards;
       }
-
       .color {
         display: block;
         margin: 24px auto 31px;
@@ -86,19 +122,64 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 30px;
     border-top: 1px dashed grey;
-    margin: 60px 42px 0;
-    & > p {
-      max-width: 33%;
+    margin: 35px 42px 0;
+    & > article {
+      width: 33%;
     }
   }
   .answerReponse {
-    & > div {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
+    &__validate {
+      background-color: limegreen;
+    }
+    &__cross {
       background-color: red;
+    }
+    & > div {
+      border-radius: 50%;
+      display: none;
+    }
+    & > div.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation-name: shapeGrow;
+      animation-fill-mode: forwards;
+      animation-duration: 0.4s;
+      @keyframes shapeGrow {
+        0% {
+          width: 0;
+          height: 0;
+        }
+        100% {
+          width: 36px;
+          height: 36px;
+        }
+      }
+      img {
+        animation-name: opacity;
+        animation-fill-mode: forwards;
+        transition-delay: 0.3s;
+        animation-duration: 0.4s;
+        @keyframes opacity {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &__good,
+    &__wrong {
+      display: none;
+    }
+    &__wrong {
+      span:first-child {
+        font-weight: 700;
+      }
     }
   }
 }
