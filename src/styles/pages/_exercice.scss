@@ -53,12 +53,33 @@
     width: 50%;
     position: relative;
     background-color: $white;
-    border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    overflow: hidden;
 
     .contentExercice {
       max-width: 280px;
       margin: 56px auto 0;
+
+      .sound {
+        position: absolute;
+        background: #D8D8D8;
+        width: 93px;
+        height: 93px;
+        border-radius: 50px;
+        top: -20px;
+        left: -20px;
+
+        &:before {
+          content:'';
+          position:absolute;
+          background-image: url('../images/sound.svg');
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 15px;
+          right: 30px;
+          bottom: 30px;
+        }
+      }
       
       .consigne {
         font-size: 18px;
@@ -71,6 +92,10 @@
         margin: 24px auto 31px;
       }
     }
+  }
+
+  .contentReponse {
+    margin-right: 50px;
   }
 
 }

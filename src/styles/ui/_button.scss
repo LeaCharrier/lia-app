@@ -6,32 +6,46 @@
   cursor: pointer;
   border-radius: 30px;
   padding: 15px 30px;
+
   &__classic {
     font-weight: 700;
     font-size: 16px;
+    background-color: $bg;
+    float: right;
+    margin-top: 40px;
+
     &--active {
 
     }
+
     &--inactive {
 
     }
   }
+
   &__choise {
-    padding: 15px 50px;
+    padding: 9px 50px;
     display: flex;
     align-items: center;
     background-color: white;
     box-shadow: $box-shadow;
+    width: 100%;
+    margin-bottom: 18px;
+    border: 1px solid #F7F7F7;
+
+
     & > span:first-of-type {
       font-weight: 700;
       padding-right: 40px;
       font-size: 12px;
     }
+
     & > span:last-of-type {
       font-weight: 500;
       position: relative;
       font-size: 16px;
       padding-left: 8px;
+
       &:before {
         content: '';
         width: 11px;
@@ -44,11 +58,12 @@
         left: -15px;
         border-radius: 100%;
       }
+
       &:after {
         content: '';
         opacity: 0;
-        width: 6px;
-        height: 6px;
+        width: 7px;
+        height: 7px;
         border-radius: 50%;
         position: absolute;
         left: -12px;
