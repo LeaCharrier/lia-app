@@ -264,6 +264,7 @@ Router.on('/exercice/:id', function (id) {
         ev.preventDefault();
         page.classList.add('page--badge');
         button.classList.remove('button__classic--wrong', 'button__classic--good');
+        document.querySelector('img.arbre').classList.add('arbre--active')
     })
 });
 Router.on('/', function () {
