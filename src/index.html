@@ -17,7 +17,45 @@
 </header>
 
 <main>
-    <div class="page page--active">
+    <div id="choiceGroup" class="page groupe">
+        <header>
+            <img src="images/logo.png">
+        </header>
+
+        <main>
+            <h2 class="title">Bonjour, comencez par choisir votre groupe pour commencer a suivre :</h2>
+            <div class="containCards">
+
+                <a class="router-link" href="/choiceChapter">
+                    <div class="card">
+                        <img src="images/groupe1.png">
+                        <p>Power Ranger</p>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceChapter">
+                    <div class="card">
+                        <img src="images/groupe2.png">
+                        <p>Tortue Ninja</p>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceChapter">
+                    <div class="card">
+                        <img src="images/groupe3.png">
+                        <p>Avengers</p>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceChapter">
+                    <div class="card">
+                        <img src="images/groupe4.png">
+                        <p>Avengers</p>
+                    </div>
+                </a>
+
+            </div>
+        </main>
+    </div>
+    <!--choice group -->
+    <div id="exercice" class="page">
         <div class="listCours activePage">
             <ul class="listCours__links">
                 <li>
@@ -25,6 +63,150 @@
                 </li>
             </ul>
         </div>
+    </div>
+    <!--choice chapitre-->
+    <div id="choiceChapter" class="page chapitres">
+        <header>
+            <img src="images/logo.png" class="logo">
+            <div class="equipe">
+                <div class="contentEquipe">
+                    <img src="images/equipe.png">
+                    <p class="nameGroupe">Power Rangers</p>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <a href="#" class="back"><i></i>Retour au choix du groupe</a>
+            <h2 class="title">Les leçons</h2>
+            <div class="containCards">
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/bases.png">
+                        <div>
+                            <h3>Chapitre 1</h3>
+                            <p>Bases</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/animaux.png">
+                        <div>
+                            <h3>Chapitre 2</h3>
+                            <p>Animaux</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/nourriture.png">
+                        <div>
+                            <h3>Chapitre 3</h3>
+                            <p>Nourriture</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/grammaire.png">
+                        <div>
+                            <h3>Chapitre 4</h3>
+                            <p>Grammaire</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/date.png">
+                        <div>
+                            <h3>Chapitre 5</h3>
+                            <p>Dates</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="router-link" href="/choiceExercice">
+                    <div class="cardChapter">
+                        <div class="numberEx">
+                            <p>3</p>
+                            <img src="images/pen.svg">
+                        </div>
+                        <img src="images/chiffres.png">
+                        <div>
+                            <h3>Chapitre 6</h3>
+                            <p>Chiffres</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--choice exercice-->
+    <div id="choiceExercice" class="page exercices">
+        <header>
+            <img src="images/logo.png" class="logo">
+            <div class="equipe">
+                <div class="contentEquipe">
+                    <img src="images/equipe.png">
+                    <p class="nameGroupe">Power Rangers</p>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <a href="#" class="back"><i></i>Retour au choix du groupe</a>
+            <div class="cardChapter">
+                <img src="images/bases.png">
+                <h3>Chapitre 1</h3>
+                <p>Bases</p>
+            </div>
+
+            <div class="containCards">
+                <div class="card">
+                    <div class="img">
+                        <img src="images/vivant.png">
+                    </div>
+                    <h3>Chapitre 1</h3>
+                    <p>Être vivant</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="images/chiffre.png">
+                    </div>
+                    <h3>Chapitre 2</h3>
+                    <p>Numéros</p>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="images/color.png">
+                    </div>
+                    <h3>Chapitre 3</h3>
+                    <p>Les couleurs</p>
+                </div>
+            </div>
+        </main>
     </div>
     <!--
         Exercice 1

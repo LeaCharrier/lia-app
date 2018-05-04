@@ -267,4 +267,22 @@ Router.on('/exercice/:id', function (id) {
         button.classList.remove('button__classic--wrong', 'button__classic--good');
     })
 });
+Router.on('/', function () {
+    displayPage('choiceGroup');
+});
+Router.on('/choiceChapter', function () {
+    displayPage('choiceChapter');
+});
+Router.on('/choiceExercice', function () {
+    displayPage('choiceExercice');
+});
 Router.start();
+
+function displayPage(id) {
+  let pages = document.querySelectorAll('.page')  ;
+  for (let i = 0; i < pages.length; i++) {
+      pages[i].classList.remove('page--active');
+  }
+    let bob = document.getElementById(id);
+    bob.classList.add('page--active');
+}
