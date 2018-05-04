@@ -257,9 +257,8 @@
 // init router
 
 Router.on('/exercice/:id', function (id) {
-    let page = document.getElementById('exercice-' + id);
-    document.querySelector('.page--active').classList.remove('page--active');
-    page.classList.add('page--active');
+    let param = 'exercice-' + id;
+    displayPage(param);
     let button = document.getElementById('next-step');
     button.addEventListener('click', function (ev) {
         ev.preventDefault();
@@ -279,7 +278,7 @@ Router.on('/choiceExercice', function () {
 Router.start();
 
 function displayPage(id) {
-  let pages = document.querySelectorAll('.page')  ;
+  let pages = document.querySelectorAll('.page');
   for (let i = 0; i < pages.length; i++) {
       pages[i].classList.remove('page--active');
   }
