@@ -258,7 +258,7 @@
 
 Router.on('/exercice/:id', function (id) {
     let param = 'exercice-' + id;
-    displayPage(param);
+    let page = displayPage(param);
     let button = document.getElementById('next-step');
     button.addEventListener('click', function (ev) {
         ev.preventDefault();
@@ -284,4 +284,5 @@ function displayPage(id) {
   }
     let bob = document.getElementById(id);
     bob.classList.add('page--active');
+    return bob;
 }
