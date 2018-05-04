@@ -17,16 +17,19 @@
 </header>
 
 <main>
-    <div class="page activePage">
+    <div class="page page--active">
         <div class="listCours activePage">
             <ul class="listCours__links">
                 <li>
-                    <a href="">exercice one</a>
+                    <a class="router-link" href="/exercice/1">exercice one</a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="page">
+    <!--
+        Exercice 1
+    -->
+    <div class="page" id="exercice-1">
         <div class="exercice">
             <div class="chapitre">
                 <h2 class="title">Chapitre 1</h2>
@@ -62,6 +65,15 @@
                             </button>
                         </li>
                     </ul>
+                    <div class="badge__content">
+                        <p>
+                            Félicitation vous venez de terminer votre premier exercice. <br>
+                            Voici votre badge :
+                        </p>
+                        <div class="badge__content__image">
+                            <img src="" alt="badge">
+                        </div>
+                    </div>
                 </div>
                 <div class="contentReponse">
                     <div class="answerReponse">
@@ -81,7 +93,7 @@
                             <span class="answerReponse__element"></span>
                         </p>
                     </article>
-                    <button id="next-step" class="button button__classic" disabled>
+                    <button class="button button__classic button__classic--inactive" id="next-step" disabled>
                         <p>Continuer</p>
                     </button>
                 </div>
