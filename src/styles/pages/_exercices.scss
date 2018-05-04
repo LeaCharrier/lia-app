@@ -1,34 +1,57 @@
 .exercices {
-	background-color: #FAFAFA;
+
+  main {
+    background: $bg;
+    padding: 0 33px;
+    
+    &:after {
+      content:'';
+      position: absolute;
+      background: url('../images/tache2.png');
+      background-repeat: no-repeat;
+      width: 1000px;
+      height: 530px;
+      top: -0;
+      left: 0px;
+    }
+  }
 
 	.cardChapter {
-		background-color: #FAFAFA;
+		flex-direction: column;
+		background-color: $bg;
 		box-shadow: none;
 		border: none;
-		padding: 74px 0 42px 72px;
-		margin: 0;
+		padding: 0 0 50px 120px;
+		margin: 27px 0 0 0;
+		background: transparent;
+
+		img {
+			width: 42px;
+			margin: 0 auto 8px;
+		}
 	}
 
 	.containCards {
 		display: flex;
-		margin-left: 118px;
+		justify-content: center;
 
 		.card {
 			display: flex;
 			flex-direction: column;
 		  padding: 0 0 24px;
-		  margin: 0 9px 40px;
+		  margin: 0 25px 40px;
 		  width: 200px;
 		  border: 1px solid $bg;
 		  border-radius: 30px;
-		  box-shadow: 0 2px 4px 0 rgba(103, 103, 103, 0.08);
+		  box-shadow: 0 2px 4px 0 rgba(77, 143, 255, 0.08);
 		  background-color: $white;
+		  z-index: 3;
 
 		  .img {
 		  	position: relative;
     		width: 100%;
 		  	height: 100px;
-		  	margin: 20px auto 35px;
+		  	margin: 20px auto 25px;
 
 		  	img {
 		  		position: absolute;
@@ -43,6 +66,7 @@
 		    font-weight: 900;
 		    font-size: 12px;
 		    padding-left: 26px;
+		    margin-bottom: 5px;
 		  }
 
 		  p {

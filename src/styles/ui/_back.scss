@@ -1,0 +1,19 @@
+.chapitres .back,
+.exercices .back {
+	float: left;
+	position: relative;
+	border-radius: 50px;
+	box-shadow: 0 2px 4px 0 rgba(77, 143, 255, 0.08);
+	padding: 14px 20px 14px 29px;
+	margin-top: 25px;
+	background: $white;
+
+	i {
+	  position: absolute;
+	  top: 22px;
+	  left: 15px;
+	  width: 3px;
+	  height: 7px;
+	  background: url('../images/arrow.svg');
+	}
+}
