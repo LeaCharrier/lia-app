@@ -37,7 +37,7 @@
     .title {
       opacity: 0;
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 500;
       text-transform: uppercase;
       margin-top: 42px;
       margin-left: 42px;
@@ -66,6 +66,13 @@
     .arbre {
       position: absolute;
       bottom: 0;
+      transform: translateX(-5px) scale(0.98);
+      animation: 1s timeToArbre forwards;
+      @keyframes timeToArbre {
+        100% {
+          transform: translateX(0) scale(1);
+        }
+      }
     }
 
     .arbreEntier {
@@ -116,6 +123,32 @@
         display: block;
         margin: 24px auto 31px;
       }
+      .badge__content {
+        display: none;
+        p {
+          font-family: $font-normal;
+          font-weight: 500;
+          margin-bottom: 82px;
+        }
+        &__image {
+          display: flex;
+          justify-content: center;
+          img {
+            animation: 1.5s infinite bump;
+            @keyframes bump {
+              0% {
+                transform: scale(0.95);
+              }
+              50% {
+                transform: scale(1.05);
+              }
+              100% {
+                transform: scale(0.95);
+              }
+            }
+          }
+        }
+      }
     }
   }
   .contentReponse {
@@ -131,10 +164,10 @@
   }
   .answerReponse {
     &__validate {
-      background-color: limegreen;
+      background-color: $green-light;
     }
     &__cross {
-      background-color: red;
+      background-color: $red;
     }
     & > div {
       border-radius: 50%;

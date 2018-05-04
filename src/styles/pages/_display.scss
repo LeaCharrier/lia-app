@@ -1,6 +1,22 @@
 .page {
   display: none;
-}
-.activePage {
-  display: block;
+  &--active {
+    display: block;
+    height: 100%;
+  }
+  &--badge {
+    .consigne,
+    .color,
+    .contentExercice__list,
+    .button__sound,
+    .answerReponse__good,
+    .answerReponse__wrong,
+    .answerReponse > div {
+      display: none !important;
+    }
+    .exercice .containExercice .contentExercice .badge__content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
